@@ -2,17 +2,13 @@
 
 int main()
 {
-    int a,b;
-
-    
+    int a,i;
     printf("숫자 한개를 입력하시오:");
     scanf("%d",&a);
-
-    for(b=0;b<a;b++)
+    for(i=1;i<=a;i++)
     {
-        printf("%d\n",b);
+        if(i%2==0)
+            continue;
+        printf(" %d ",i);
     }
-
-    return 0;
-
 }
