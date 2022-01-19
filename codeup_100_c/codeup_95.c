@@ -13,21 +13,22 @@ int main()
 
     for(i=1;i<=n;i++){ 
         scanf("%d %d",&x,&y);
-        for(j=1;j<=19;j++)
-        {     // 가로축 바꾸기.
+        for(j=1;j<=19;j++) // 가로축 바꾸기.
+        {     
             if(arr[x][j]==0)
                 arr[x][j]=1;
             else arr[x][j]=0;
         }
-        for(j=1;j<=19;j++)
-        {     // 세로축 바꾸기
+        for(j=1;j<=19;j++) // 세로축 바꾸기
+        {     
             if(arr[j][y]==0)
                 arr[j][y]=1;
             else arr[j][y]=0;
         }
     }
     
-    for(i=1;i<=19;i++){
+    for(i=1;i<=19;i++)    // 출력
+    {    
         for(j=1;j<=19;j++)
             printf("%d ",arr[i][j]);
         printf("\n");
